@@ -1,0 +1,21 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "krish",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "nodemon": "^3.1.4",
+    "parser": "^0.1.4"
+  }
+}
