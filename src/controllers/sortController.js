@@ -1,7 +1,5 @@
 // src/controllers/sortController.js
-const { mergeSort } = require('../algorithms/mergeSort');
-const { quickSort } = require('../algorithms/quickSort');
-const { bubbleSort } = require('../algorithms/bubbleSort');
+const { mergeSort, quickSort, bubbleSort, selectionSort } = require('../algorithms');
 
 const sortArray = (req, res) => {
     const { array, algorithm } = req.body;
@@ -11,14 +9,21 @@ const sortArray = (req, res) => {
     }
 
     let sortedArray;
-    if (algorithm === 'mergeSort') {
-        sortedArray = mergeSort(array);
-    } else if (algorithm === 'quickSort') {
-        sortedArray = quickSort(array);
-    } else if (algorithm === 'bubbleSort') {
-        sortedArray = bubbleSort(array);
-    } else {
-        return res.status(400).json({ error: 'Invalid sorting algorithm specified' });
+    switch (algorithm) {
+        case 'mergeSort':
+            sortedArray = mergeSort(array);
+            break;
+        case 'quickSort':
+            sortedArray = quickSort(array);
+            break;
+        case 'bubbleSort':
+            sortedArray = bubbleSort(array);
+            break;
+        case 'selectionSort':
+            sortedArray = selectionSort(array);
+            break;
+        default:
+            return res.status(400).json({ error: 'Invalid sorting algorithm specified' });
     }
 
     return res.status(200).json({ sortedArray });
