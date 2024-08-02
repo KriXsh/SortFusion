@@ -2,8 +2,12 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const cors = require('cors');
+
 
 app.use(express.json());
+app.use(cors());
+
 
 const sortRoutes = require('./routes/sortRoutes');
 app.use('/api', sortRoutes);
@@ -12,6 +16,7 @@ app.use('/api', sortRoutes);
 app.use((req, res, next) => {
     res.status(501).json({ code: 501 ,error: 'Route not found' });
 });
+
 
 // Error-handling middleware
 app.use((err, req, res, next) => {
