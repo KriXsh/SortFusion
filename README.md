@@ -5,7 +5,7 @@ SortFusion is a web application that visualizes various sorting algorithms. It a
 Visualize different sorting algorithms.
 Graphical representation of sorting steps.     
 User-friendly interface.
-Supports Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, and Tree Sort.
+Supports Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, and Tree Sort.      
 Technologies Used
 React.js for the front-end.
 Node.js and Express.js for the back-end.
