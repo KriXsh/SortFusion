@@ -3,7 +3,7 @@ SortFusion is a web application that visualizes various sorting algorithms. It a
                              
 ## Features     
 Visualize different sorting algorithms.
-Graphical representation of sorting steps.     
+Graphical representation of sorting steps.          
 User-friendly interface.     
 Supports Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, and Tree Sort.      
 Technologies Used
