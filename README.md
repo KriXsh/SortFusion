@@ -7,7 +7,7 @@ Graphical representation of sorting steps.
 User-friendly interface.     
 Supports Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, and Tree Sort.      
 Technologies Used
-React.js for the front-end.
+React.js for the front-end.    
 Node.js and Express.js for the back-end.
 Particles.js for the background particle effect.
 Axios for API requests.
