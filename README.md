@@ -9,7 +9,7 @@ Supports Merge Sort, Quick Sort, Bubble Sort, Selection Sort, Heap Sort, Inserti
 Technologies Used
 React.js for the front-end.           
 Node.js and Express.js for the back-end.
-Particles.js for the background particle effect.
+Particles.js for the background particle effect.   
 Axios for API requests.
 Joi for input validation.               
 
