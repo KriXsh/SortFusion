@@ -22,4 +22,6 @@ const quickSort = (arr) => {
     return [...quickSort(left), ...equal, ...quickSort(right)];
 };
 
-module.exports = quickSort;
+module.exports = { 
+    quickSort, 
+} 
